@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Friendship Game by Batoul</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎮 Welcome to Batoul’s Game 🎮</h1>
+    <input type="text" id="name" placeholder="Your name">
+    <input type="number" id="age" placeholder="Your age">
+    <select id="reward">
+      <option value="eternal friendship 💖">Eternal Friendship 💖</option>
+      <option value="$10 million 💸">$10 Million 💸</option>
+      <option value="global alliance 🌍">Global Alliance 🌍</option>
+    </select>
+    <button onclick="startGame()">Start Game</button>
+  </div>
+
+  <div class="game hidden">
+    <h2 id="gameText"></h2>
+    <button onclick="win()">💥 CLICK TO WIN 💥</button>
+  </div>
+
+  <div class="result hidden">
+    <h2 id="resultText"></h2>
+  </div>
+
+  <audio id="music" src="music.mp3" autoplay loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
